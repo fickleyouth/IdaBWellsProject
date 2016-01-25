@@ -1,0 +1,12 @@
+GREL Expressions: 
+
+GREL(Google Refine Expression Language) Expressions:
+value.parseHtml().select("date")[0].htmlText()
+value.parseHtml().select("persName")[0].htmlText()
+value.parseHtml().select (“placeName")[0].htmlText()
+
+
+********
+NB: Even though the expression says it parses html, the elements are still XML. 
+Google Refine has no XML parser but after looking at forums and documentation,
+ I found out the HTML parser, parsers tags and hierarchy and would work from XML.
